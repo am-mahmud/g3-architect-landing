@@ -14,8 +14,16 @@
   display: flex;
 }
 
+.text-orange{
+  color: #FF900E;
+}
+
 .text-gray{
   color: #424242;
+}
+
+.text-light-gray{
+  color: #727272;
 }
 
 .btn-primary{
@@ -112,4 +120,48 @@ main > section {
 .our-features{
   margin-left: 130px;
   max-width: 530px;
+}
+
+.feature-title{
+  font-size: 2.5rem;
+}
+
+#quick-list{
+  font-weight: 400;
+}
+
+
+
+
+/* Responsive media query */
+
+/* Small device */
+
+@media screen and (max-width: 576px){
+  .nav-bar, 
+  .nav-links,
+  .teams {
+    flex-direction: column;
+  }
+
+  .team-img-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .our-features{
+    margin-left: 20px;
+  }
+}
+
+/* Medium device */
+
+@media screen and (min-width: 577px ) and (max-width: 992px){
+  .teams{
+    flex-direction: column;
+  }
+
+  .our-features{
+    margin: 30px auto;
+  }
+
 }
